@@ -68,11 +68,17 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+
+  transition: all .4s ease-in-out;
 }
 
 .panel h2 {
   margin: 0;
   padding: 3rem 0;
+}
+
+.panel-collapse {
+  max-height: 0;
 }
 
 .circle {
@@ -137,7 +143,7 @@ div {
 }
 
 .list li {
-  padding: 0 .5em;
+  padding: .5em;
   max-height: 0;
 
   background-color: plum;
@@ -145,4 +151,10 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+
+  transition: all .4s linear;
+}
+
+.list .list-item {
+  max-height: 100%;
 }
