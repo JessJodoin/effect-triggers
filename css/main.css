@@ -35,7 +35,7 @@ div {
 
   background-color: limegreen;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .box-show {
@@ -50,6 +50,11 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: all .4s ease-in-out;
+}
+
+.diamond-in {
+  right: 35px;
 }
 
 .panel {
@@ -77,6 +82,44 @@ div {
 
   background-color: orange;
   border-radius: 50%;
+}
+
+.circle-mover {
+  animation: circle-mover 1s linear;
+}
+
+@keyframes circle-mover {
+
+  0% {
+    right: 20px;
+    top: calc(50% - 50px);
+  }
+
+  20% {
+    right: 42px;
+    top: 5px;
+  }
+
+  40% {
+    right: 64px;
+    top: 45px;
+  }
+
+  60% {
+    right: 86px;
+    top: 15px;
+  }
+
+  80% {
+    right: 108px;
+    top: 35px;
+  }
+
+  100%{
+    right: 130px;
+    top: 25px;
+  }
+
 }
 
 .list {
