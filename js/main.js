@@ -33,9 +33,9 @@ $circle.on('webkitAnimationEnd animationend', function () {
 });
 
 $append.on('click', function () {
-  var $li = $(`<li>New List Item</li>`);
+  var $li = $('<li>New List Item</li>');
 
   $li.addClass('list-item');
 
-  $('ul').append($li);
+  $('.list').append($li);
 });
