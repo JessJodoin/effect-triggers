@@ -151,10 +151,21 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
-
-  transition: all .4s linear;
 }
 
 .list .list-item {
   max-height: 100%;
+  animation: list-slide 1s linear;
+}
+
+@keyframes list-slide {
+
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: 100%;
+  }
+
 }

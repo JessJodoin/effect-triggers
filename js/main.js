@@ -37,5 +37,5 @@ $append.on('click', function () {
 
   $li.addClass('list-item');
 
-  $('.list').append($li);
+  $('.list').prepend($li);
 });
